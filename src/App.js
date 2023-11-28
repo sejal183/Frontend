@@ -4,9 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import './App.css';
 
 function App() {
+  let navigate = useNavigate();
+  
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  let navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -20,10 +21,10 @@ function App() {
       },
     })
       .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        if (data === true) {
-          navigate('/salary');
+      .then((id) => {
+        console.log(id,typeof id);
+        if (id !== -1) {
+          navigate('/salary', { state: { e_id: id } });
         }else{
           alert("Incorrect username or password");
         }

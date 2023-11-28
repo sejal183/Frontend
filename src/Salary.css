@@ -1,0 +1,55 @@
+.salary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 64px;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: gray;
+}
+
+.signout-btn {
+    margin-right: 24px;
+}
+
+section {
+    width: 100%;
+}
+
+article {
+    height: 100px;
+    margin: 16px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.description-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 25%;
+}
+
+.sal-desc{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sal-pdate{
+    font-weight: 600;
+}
+
+.sal-amount{
+    font-weight: 600;
+}
