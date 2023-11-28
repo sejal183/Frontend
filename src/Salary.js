@@ -83,7 +83,7 @@ function Salary() {
       tableLineColor: [0, 0, 0]
     });
     // console.log(pdf.output("datauristring"));
-    pdf.save("pdf");
+    pdf.save("salary");
   }
 
   return (
